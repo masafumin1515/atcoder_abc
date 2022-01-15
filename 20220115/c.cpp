@@ -5,7 +5,7 @@ using namespace std;
 const int max_n = 200222, inf = 1000111222;
 
 int n, q, a[max_n];
-map<int, vector<int> > all;
+map< int, vector<int> > all;
 
 int main() {
     //freopen("input.txt", "r", stdin);
