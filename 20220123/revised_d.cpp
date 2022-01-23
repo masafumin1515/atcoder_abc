@@ -2,10 +2,12 @@
 #include <vector>
 #include <utility>
 using namespace std;
+
 int n;
 int a[20][20];
 vector<pair<int, int>> vec;
 bool used[20];
+
 int calc()
 {
   if(vec.size() == n){
@@ -21,6 +23,7 @@ int calc()
       break;
     }
   }
+  
   used[l] = true;
   int ret = 0;
   for(int i = 1; i <= 2*n; i++){
@@ -34,6 +37,7 @@ int calc()
   used[l] = false;
   return ret;
 }
+
 int main(void)
 {
   cin >> n;
